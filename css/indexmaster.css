@@ -4,10 +4,11 @@
 
 h1{
     margin-left: auto;
+    color:#fff;
 }
 .map-1{
     width:1000px;
-    height:500px;
+    height:400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -24,16 +25,22 @@ h1{
 }
 .stats{
     width:650px;
-    height:650px;
+    height:560px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.counter{
+    width:200px;
+    height:460px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 .worldmap{
-    width:700px;
+    width:1000px;
     height:650px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-

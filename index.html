@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
-<body>
+<body style="box-shadow: inset 0 0 5rem rgba(0, 0, 0, .9);background-color:#272a2e">
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
         <a class="navbar-brand" href="#">TrackCorona</a>
@@ -20,40 +20,37 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item "">
-                <a class=" nav-link" href="">WHO</a>
+                <li class="nav-item ">
+                <a class=" nav-link" href="https://www.who.int/">WHO</a>
                 </li>
-                <li class="nav-item "">
-                <a class=" nav-link" href="">Donations</a>
+                <li class="nav-item ">
+                <a class=" nav-link" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/donate">Donations</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <div class="container-fluid">
-        <h1>Counter:</h1>
-        <iframe width="420" height="130" src="https://datastudio.google.com/embed/reporting/3a7a2427-7710-4b57-8c08-e2364a495318/page/PaEJB" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        <h1>Affected Countries:</h1>
+        <iframe class="worldmap" src="https://datastudio.google.com/embed/reporting/bc324fe4-dede-465e-8490-8e1a2b78fa99/page/JODJB" frameborder="0" style="border:0" allowfullscreen></iframe>
+
     </div>
 
 
     <div class="container-fluid">
+      <div class="row">
 
-        <h1>Affected Countries:</h1>
-        <div class="row">
-            <!-- section for map -plots -->
-
-            <div class="col-md-6">
-
-                <iframe class="worldmap" src="https://datastudio.google.com/embed/reporting/bc324fe4-dede-465e-8490-8e1a2b78fa99/page/JODJB" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-            <div class="col-md-6 ">
-                <!-- <h1>Statistics:</h1> -->
-                <iframe class="stats " src="https://datastudio.google.com/embed/reporting/5850155e-d01a-4559-a28e-f495758d275c/page/z79IB" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-
-
-            <!-- <iframe class="map-1" src="https://datastudio.google.com/embed/reporting/9661e472-10d0-470d-bb31-90d4eb013772/page/238IB" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+        <div class="col-md-4">
+          <h1>Count:</h1>
+          <iframe class="counter" src="https://datastudio.google.com/embed/reporting/3a7a2427-7710-4b57-8c08-e2364a495318/page/PaEJB" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
+
+        <div class="col-md-8 ">
+          <h1>Statistics:</h1>
+            <iframe class="stats " src="https://datastudio.google.com/embed/reporting/5850155e-d01a-4559-a28e-f495758d275c/page/z79IB" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
 
     <div class="container-fluid">
@@ -63,6 +60,7 @@
     </div>
 
     <div class="container-fluid">
+      <h1>Country Wise Statistics:</h1>
         <iframe class="pie" src="https://datastudio.google.com/embed/reporting/856ad975-3757-4c3c-961a-bd13c718032a/page/S0CJB" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
